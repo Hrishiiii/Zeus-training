@@ -1,0 +1,155 @@
+1.a.	What is HTML? Give basic structure of the HTML page.
+HTML is the shortform for hypertext markup language. It is the language using which webpages are created. It is used to create and format webpage.
+Structure of HTML page:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title></title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+
+
+1.b. Difference between inline and block level element.
+Inline elements are elements that do not take up the entire width of the page when they are created.
+Block level elements are the ones that take up the entire width of the line the are created on.
+Elements declared after an inline element get stacked beside it unless they are block level elements.
+Block level elements are stacked one below the other.
+Eg: Inline elements: span, img
+	Block level elements: p, div
+
+
+
+
+2 a. Explain the different ways in which CSS can be applied to HTML, what is the preferred way and why?
+	The different ways to apply CSS in HTML are inline, internal and external
+External CSS:-
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html> 
+	
+	Internal CSS:-
+		<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: linen;
+}
+
+h1 {
+  color: maroon;
+  margin-left: 40px;
+}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+Inline CSS: 
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="color:blue;text-align:center;">This is a heading</h1>
+<p style="color:red;">This is a paragraph.</p>
+
+</body>
+</html>
+
+The preferred way is external CSS as it involves the creation of a separate CSS file and hence we can just focus on the HTML in a file and link the CSS directly to it. 
+It reduces clutter and increases performance.
+
+
+2 b. What are different CSS selectors, with example explain Element, Class and Id selectors.
+	Selectors are basically used to pick particular element from HTML so that various things can be performed on them or with them. There are 3 types of selectors:-
+	1) Element selectors:- These are the selectors where we can target directly the HTML elements and give different styles to them or perform operations using javascript.
+
+	2)Class selectors:- These help us to select elements by using the classes associated with them. This is a more efficient way of targeting elements.
+
+	3)Id selectors:- These are used to select unique or very less frequently occuring elements in HTML. They have precedence over class selectors.
+
+
+2 c. With the help of a diagram explain CSS Box Model.
+	In CSS, the term "box model" is used when talking about design and layout. The CSS box model is essentially a box that wraps around every HTML element. 
+	It consists of: margins, borders, padding, and the actual content. 
+	Explanation of the different parts:
+	Content - The content of the box, where text and images appear
+	Padding - Clears an area around the content. The padding is transparent
+	Border - A border that goes around the padding and content
+	Margin - Clears an area outside the border. The margin is transparent
+	The box model allows us to add a border around elements, and to define space between elements.
+
+
+
+3a.	List down ways in which JavaScript command can be added to a webpage, what is the preferred way.
+	There are 3 ways to add javascript code into HTML webpage. They are as follows:
+	1. Embedding code: Here we use the script tag inside the head section of the webpage. Now we can add our javascipt code here.
+	<!DOCTYPE html >  
+	<html>  
+	<head>  
+	<title> page title</title>  
+	</head>  
+	<body>  
+	<script>  
+		document.write("Welcome to India");  
+	</script>  
+	<p> Hello world </p>  
+	</body>  
+	</html>  
+
+	2. Inline code: Here we add the javascript on the same line as the HTML element on which we want to perform actions.
+	<!DOCTYPE html >  
+	<html>  
+	<head>  
+	<title> page title</title>  
+	</head>  
+	<body>  
+	<p>  
+	<a href="#" onClick="alert('Welcome !');">Click Me</a>  
+	</p>  
+	<p> Hey there </p>  
+	</body>  
+	</html>
+
+	3. External code: Here we write our javascript code in an external file and connect it to HTML via the script tags.
+	 <html>  
+	<head>  
+	<meta charset="utf-8">  
+	<title>Including a External JavaScript File</title>  
+	</head>  
+	<body>  
+	<form>  
+	<input type="button" value="Result" onclick="display()"/>  
+	</form>  
+	<script src="hello.js">  
+	</script>  
+	</body>  
+	</html>  
+
+	The preferred way is external code as this gives us the flexibility of using the same code in multiple webpages. It also saves our time as we use the same code again with
+	out rewriting.
+
+
+
+	
