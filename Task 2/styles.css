@@ -64,6 +64,7 @@ h4 {
   margin-top: 25px;
   margin-bottom: 25px;
   overflow: scroll;
+  overflow-x: hidden;
 }
 
 #radio-btn {
