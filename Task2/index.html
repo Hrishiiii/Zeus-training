@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- My CSS file -->
+    <link rel="stylesheet" href="styles.css" />
+    <title>My first web page</title>
+  </head>
+  <body>
+    <h1 class="heading">M y &nbsp; f i r s t &nbsp; w e b &nbsp; p a g e</h1>
+    <p class="ref"></p>
+    <h3 class="color info">What this is</h3>
+    <p>
+      Welcome to my <em>first</em> webpage. I created this webpage without the
+      assistance of a webpage editor. Just my little text editor and a keen
+      <strong>UNDERSTANDING OF HTML</strong>.
+    </p>
+    <h3 class="color">Why this is</h3>
+    <ul>
+      <li>To learn HTML</li>
+      <li>List element</li>
+      <ol>
+        <li>Home</li>
+        <li>FAQ</li>
+        <li>Contact</li>
+        <li>About</li>
+      </ol>
+      <li>Here I have created ordered and unordered list</li>
+    </ul>
+    <h3 class="color">ZeusLearning.com</h3>
+    <a class="link1" href="https://www.zeuslearning.com/" target="_blank"
+      >This link will open zeuslearning.com in new tab</a
+    >
+    <h3 class="color">On click of following image navigate to Google.com</h3>
+    <a href="https://www.google.com/"
+      ><img
+        src="https://cdn.vox-cdn.com/thumbor/p01ezbiuDHgRFQ-htBCd7QxaYxo=/0x105:2012x1237/1600x900/cdn.vox-cdn.com/uploads/chorus_image/image/47070706/google2.0.0.jpg"
+        alt="Google logo"
+    /></a>
+    <h4>Some random table</h4>
+    <table class="table">
+      <tbody>
+        <tr>
+          <td>Row 1,cell 1</td>
+          <td>Row 1,cell 2</td>
+          <td>Row 1,cell 3</td>
+        </tr>
+        <tr>
+          <td>Row 2,cell 1</td>
+          <td>Row 2,cell 2</td>
+          <td>Row 2,cell 3</td>
+        </tr>
+        <tr>
+          <td>Row 3,cell 1</td>
+          <td>Row 3,cell 2</td>
+          <td>Row 3,cell 3</td>
+        </tr>
+        <tr>
+          <td>Row 4,cell 1</td>
+          <td>Row 4,cell 2</td>
+          <td>Row 4,cell 3</td>
+        </tr>
+      </tbody>
+    </table>
+    <h4>Some random form</h4>
+    <p><strong>NOTE</strong>: It looks the part, but won't do anything</p>
+
+    <!-- ------------------ Form ---------------------------- -->
+
+    <form id="form" name="myForm" action="">
+      <label for="name">Name:</label><br />
+      <input type="text" placeholder="Your name" class="inp" /><br />
+      <label for="comments" class="comments">Comments:</label><br />
+      <textarea
+        name="textarea"
+        id="txt-1"
+        cols="30"
+        rows="10"
+        placeholder="Your comments"
+        class="text-area"
+      ></textarea
+      ><br />
+      <label for="gender" class="gender">Are you:</label><br />
+      <input type="radio" name="radio" id="radio-btn" />Male <br />
+      <input type="radio" name="radio" id="radio-btn" />Female <br />
+      <button class="submit-btn">Submit Query</button>
+    </form>
+
+    <script src="app.js"></script>
+  </body>
+</html>

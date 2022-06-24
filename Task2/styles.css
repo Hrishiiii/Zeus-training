@@ -1,0 +1,82 @@
+body {
+  padding: 20px;
+  margin: 0;
+  background-color: hsl(50, 69%, 81%);
+  font-family: "Noto Sans", sans-serif;
+}
+
+.heading {
+  text-align: center;
+  background-color: rgb(169, 17, 17);
+  margin-bottom: 0;
+  margin-top: 0;
+  font-style: italic;
+  color: bisque;
+}
+
+.ref {
+  background-color: red;
+  margin-top: 0;
+  margin-bottom: 6px;
+  height: 10px;
+}
+
+.info {
+  margin-top: 0;
+}
+
+ul {
+  color: rgb(195, 28, 28);
+  font-style: italic;
+}
+
+.link1 {
+  color: rgb(195, 28, 28);
+}
+
+img {
+  height: 80px;
+  width: 180px;
+  border: 1px dashed rgb(189, 187, 187);
+}
+
+.table,
+td {
+  border: 1px double black;
+  background-color: #b9bec3;
+}
+
+h3 {
+  padding-left: 10px;
+  color: white;
+}
+
+h4 {
+  color: rgb(177, 172, 172);
+}
+
+.inp {
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+
+.text-area {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+#radio-btn {
+  margin-top: 20px;
+}
+
+.submit-btn {
+  margin-top: 25px;
+  background-color: rgb(189, 187, 187);
+  border: 1px solid #9d9fa1;
+}
+
+.color {
+  background-color: green;
+}
