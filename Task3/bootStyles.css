@@ -1,0 +1,20 @@
+html,
+body {
+  height: 100%;
+}
+
+.header,
+.footer {
+  background: linear-gradient(to bottom right, #9999ff 0%, #3366ff 100%);
+  background: linear-gradient(to left, #9999ff 0%, #6666ff 100%);
+}
+
+.sidebar {
+  background: linear-gradient(to bottom, #33cccc 0%, #009999 100%);
+}
+
+.content-1,
+.content-2,
+.content-3 {
+  background: linear-gradient(to bottom right, #6666ff 0%, #00ffff 100%);
+}
