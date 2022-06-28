@@ -2,35 +2,68 @@
 
 body {
   background: #eeeeee;
+  margin: 0;
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 hr {
-  background-color: #333333;
+  /* background-color: #333333; */
+  margin-top: 0;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .nav-bar {
+    /* width: 768px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    background-color: #25313f;
+    padding-left: 25px;
+    padding-top: 11px;
+    padding-right: 25px;
+  }
+
+  .navbar .logo {
+    width: 129px;
+    height: 23px;
+  }
+
+  .nav-bar .icons-container {
+    display: flex;
+
+    margin-top: 0;
+  }
+
+  .nav-bar .icons-container span {
+    display: none;
+  }
+
+  .nav-bar .icons-container .announcements {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
   .start-box {
     display: flex;
     justify-content: space-around;
-    height: 64px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 24px;
+    width: 720px;
+    height: 64px;
+    /* UI Properties */
     background: #8ddc97 0% 0% no-repeat padding-box;
     border-radius: 2px;
     opacity: 1;
   }
 
-  .start-box .courses {
-    height: 20px;
-    /* UI Properties */
-    text-align: left;
-    font: normal normal medium 16px/20px Quicksand;
-    letter-spacing: 0px;
-    color: #222222;
-    opacity: 1;
-    margin-left: 6px;
+  .start-box .course-box {
+    display: flex;
   }
 
-  .start-box .classes {
+  .start-box .course-box .courses {
     height: 20px;
     /* UI Properties */
     text-align: left;
@@ -39,11 +72,49 @@ hr {
     color: #222222;
     opacity: 1;
     margin-left: 6px;
+    margin-top: 24px;
+  }
+
+  .start-box .course-box .courses-img {
+    width: 21px;
+    height: 32px;
+    /* UI Properties */
+
+    color: #222222;
+    opacity: 1;
+    margin-top: 18px;
+  }
+
+  .start-box .classes-box {
+    display: flex;
+  }
+
+  .start-box .classes-box .classes-img {
+    width: 29px;
+    height: 32px;
+    color: #222222;
+    opacity: 1;
+    margin-top: 18px;
+  }
+
+  .start-box .classes-box .classes {
+    height: 20px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal medium 16px/20px Quicksand;
+    letter-spacing: 0px;
+    color: #222222;
+    opacity: 1;
+    margin-left: 6px;
+    margin-top: 24px;
   }
 
   .filter {
     margin-top: 24px;
     display: flex;
+    width: 720px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .filter .course-selector {
@@ -78,6 +149,12 @@ hr {
     opacity: 1;
   }
 
+  .underline {
+    width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .course-selector label {
     height: 15px;
     /* UI Properties */
@@ -98,6 +175,7 @@ hr {
     background: #ffffff 0% 0% no-repeat padding-box;
     border-radius: 2px;
     opacity: 1;
+    margin-top: 24px;
   }
 
   .card-1 {
@@ -115,9 +193,13 @@ hr {
 
   .card-1 .content1 {
     margin-left: 16px;
+    width: 260px;
   }
 
-  .card-1 .content1 #acceleration {
+  .card-1 .content1 #acceleration,
+  #displacement,
+  #biology,
+  #maths {
     margin-top: 0;
     margin-bottom: 0;
   }
@@ -127,20 +209,367 @@ hr {
     margin-bottom: 0;
   }
 
+  .card-1 .content1 .info .num {
+    color: #1f7a54;
+  }
+
   .card-1 .content1 .units {
-    margin-top: 8px;
+    margin-top: 5px;
     margin-bottom: 0;
   }
 
   .card-1 .content1 #teacher {
     width: 375px;
     border: none;
-    margin-top: 18px;
+    margin-top: 10px;
+
     margin-bottom: 0;
+    font-size: 16px;
+    color: #222222;
   }
 
   .card-1 .content1 .date {
     margin-top: 8px;
+    font-size: 15px;
+    /* UI Properties */
+    text-align: left;
+    font-size: 12px;
+    letter-spacing: 0px;
+    color: #666666;
+    opacity: 1;
+  }
+
+  .main-card .card-icons {
+    border-top: 1px solid #333333;
+    margin-top: 16px;
+    display: flex;
+    justify-content: space-around;
+
+    padding-top: 18px;
+  }
+
+  .card-1 .card-icons .icon-1 {
+    width: 22px;
+    height: 24px;
+  }
+
+  .card-1 .card-icons .icon-2,
+  .icon-3 {
+    width: 18px;
+    height: 20px;
+  }
+
+  .card-1 .card-icons .icon-4 {
+    width: 18px;
+    height: 24px;
+  }
+
+  .reach {
+    color: #1f7a54;
+    width: 140px;
+    height: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* height: 40px; */
+    margin-top: 16px;
+    /* UI Properties */
+    background: #e0e1e1 0% 0% no-repeat padding-box;
+    color: #616161;
+    opacity: 1;
+    margin-left: 0;
+    margin-top: 8px;
+  }
+
+  footer img {
+    width: 86.6px;
+    height: 19px;
+    /* UI Properties */
+    opacity: 1;
+    margin-bottom: 0;
+    /* margin-top: 10px; */
+    margin-right: 16px;
+  }
+
+  footer .copyright .dash {
+    margin-right: 16px;
+  }
+}
+
+/* This is for screen sizes above 1024 */
+
+@media only screen and (min-width: 1025px) {
+  .nav-bar {
+    /* width: 768px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    background-color: #25313f;
+    padding-left: 25px;
+    padding-top: 11px;
+    padding-right: 25px;
+  }
+
+  .navbar .logo {
+    width: 129px;
+    height: 23px;
+  }
+
+  .nav-bar .icons-container {
+    display: flex;
+
+    margin-top: 0;
+  }
+
+  .nav-bar .icons-container span {
+    color: #3fd28b;
+    margin-right: 32px;
+
+    height: 18px;
+  }
+
+  .nav-bar .icons-container .alert {
+    margin-right: 32px;
+  }
+
+  .nav-bar .icons-container .hamburger {
+    display: none;
+  }
+
+  .start-box {
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+    width: 976px;
+    height: 64px;
+    /* UI Properties */
+    background: #8ddc97 0% 0% no-repeat padding-box;
+    border-radius: 2px;
+    opacity: 1;
+  }
+
+  .start-box .course-box {
+    display: flex;
+  }
+
+  .start-box .course-box .courses {
+    height: 20px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal medium 16px/20px Quicksand;
+    letter-spacing: 0px;
+    color: #222222;
+    opacity: 1;
+    margin-left: 6px;
+    margin-top: 24px;
+  }
+
+  .start-box .course-box .courses-img {
+    width: 21px;
+    height: 32px;
+    /* UI Properties */
+
+    color: #222222;
+    opacity: 1;
+    margin-top: 18px;
+  }
+
+  .start-box .classes-box {
+    display: flex;
+  }
+
+  .start-box .classes-box .classes-img {
+    width: 29px;
+    height: 32px;
+    color: #222222;
+    opacity: 1;
+    margin-top: 18px;
+  }
+
+  .start-box .classes-box .classes {
+    height: 20px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal medium 16px/20px Quicksand;
+    letter-spacing: 0px;
+    color: #222222;
+    opacity: 1;
+    margin-left: 6px;
+    margin-top: 24px;
+  }
+
+  .filter {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    width: 976px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .filter .course-selector {
+    /* margin-left: 335px; */
+    height: 28px;
+    display: flex;
+    align-items: center;
+  }
+
+  .filter .course-selector label {
+    height: 15px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal medium 12px/16px Quicksand;
+    letter-spacing: 0px;
+    color: #686868;
+    opacity: 1;
+  }
+
+  .filter #course-name {
+    margin-left: 6px;
+    border: none;
+    border-bottom: 1px solid #213e543d;
+    background-color: inherit;
+    width: 202px;
+    height: 20px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal medium 16px/20px Quicksand;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+  }
+
+  .filter #course-name option {
+    width: 102px;
+    height: 20px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal medium 16px/20px Quicksand;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+  }
+
+  .filter p {
+    /* width: 132px; */
+    height: 15px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal medium 12px/14px Quicksand;
+    letter-spacing: 0px;
+    color: #686868;
+    opacity: 1;
+  }
+
+  .underline {
+    width: 976px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-container {
+    width: 976px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 24px;
+    row-gap: 24px;
+    margin-top: 16px;
+  }
+
+  .main-card {
+    display: flex;
+    flex-direction: column;
+    /* width: 571px; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    padding: 24px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border-radius: 2px;
+    opacity: 1;
+    /* margin-top: 24px; */
+  }
+
+  .card-1 {
+    display: flex;
+    height: 157px;
+  }
+
+  .card-1 img {
+    width: 132px;
+    height: 157px;
+    /* UI Properties */
+    background: transparent url("img/imageMask.png") 0% 0% no-repeat padding-box;
+    border-radius: 2px;
+    opacity: 1;
+  }
+
+  .card-1 .content1 {
+    margin-left: 16px;
+  }
+
+  .card-1 .content1 #acceleration,
+  #displacement,
+  #biology,
+  #maths {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .card-1 .content1 #acceleration {
+    width: 94px;
+    height: 20px;
+  }
+
+  .card-1 .content1 .bio {
+    /* white-space: nowrap; */
+  }
+
+  .card-1 .content1 .info {
+    margin-top: 7px;
+    margin-bottom: 0;
+
+    height: 15px;
+  }
+
+  .card-1 .content1 .info .num {
+    color: #1f7a54;
+  }
+
+  .card-1 .content1 .units {
+    margin-top: 8px;
+    margin-bottom: 0;
+    height: 15px;
+  }
+
+  .card-1 .content1 #teacher {
+    width: 264px;
+    height: 20px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 16px;
+    color: #222222;
+  }
+
+  .card-1 .content1 .date {
+    margin-top: 0;
+    font-size: 12px;
+    font: normal normal medium 12px/16px Quicksand;
+    letter-spacing: 0px;
+    color: #666666;
+    opacity: 1;
   }
 
   .main-card .card-icons {
@@ -151,9 +580,57 @@ hr {
     padding-top: 18px;
   }
 
-  .main-card .card-icons .fa-solid {
+  .card-1 .card-icons .icon-1 {
+    width: 22px;
+    height: 24px;
+  }
+
+  .card-1 .card-icons .icon-2,
+  .icon-3 {
     width: 18px;
     height: 20px;
+  }
+
+  .card-1 .card-icons .icon-4 {
+    width: 18px;
+    height: 24px;
+  }
+
+  .reach {
     color: #1f7a54;
+    width: 140px;
+    height: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 32px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 768px; */
+    /* height: 40px; */
+    margin-top: 16px;
+    /* UI Properties */
+    background: #e0e1e1 0% 0% no-repeat padding-box;
+    color: #616161;
+    opacity: 1;
+    margin-left: 0;
+    margin-top: 8px;
+  }
+
+  footer img {
+    width: 86.6px;
+    height: 19px;
+    /* UI Properties */
+    opacity: 1;
+    margin-bottom: 0;
+    /* margin-top: 10px; */
+    margin-right: 16px;
+  }
+
+  footer .copyright .dash {
+    margin-right: 16px;
   }
 }
