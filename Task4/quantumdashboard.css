@@ -61,6 +61,12 @@ hr {
 
   .start-box .course-box {
     display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 360px;
+    height: 64px;
+    box-sizing: border-box;
+    border-bottom: 4px solid #222222;
   }
 
   .start-box .course-box .courses {
@@ -87,6 +93,10 @@ hr {
 
   .start-box .classes-box {
     display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 360px;
+    height: 64px;
   }
 
   .start-box .classes-box .classes-img {
@@ -112,38 +122,41 @@ hr {
   .filter {
     margin-top: 24px;
     display: flex;
+    justify-content: space-between;
     width: 720px;
     margin-left: auto;
     margin-right: auto;
   }
 
   .filter .course-selector {
-    margin-left: 335px;
+    margin-left: 6px;
     height: 28px;
+    width: 253px;
     display: flex;
-    align-items: center;
+    justify-content: end;
   }
 
-  .filter #course-name {
+  .filter .course-selector #course-name {
+    width: 156px;
+    display: flex;
+    justify-content: space-between;
     margin-left: 6px;
-    border: none;
-    border-bottom: 1px solid #213e543d;
-    background-color: inherit;
-    width: 110px;
-    height: 20px;
-    /* UI Properties */
-    text-align: left;
-    font: normal normal medium 16px/20px Quicksand;
-    letter-spacing: 0px;
-    color: #333333;
-    opacity: 1;
+    font-size: 16px;
+    border-bottom: 1px solid #666666;
+  }
+
+  .filter .course-selector #course-name img {
+    width: 10px;
+    height: 24px;
   }
 
   .filter p {
     height: 15px;
+    width: 132px;
     /* UI Properties */
     text-align: left;
     font: normal normal medium 12px/14px Quicksand;
+    font-size: 12px;
     letter-spacing: 0px;
     color: #686868;
     opacity: 1;
@@ -155,11 +168,13 @@ hr {
     margin-right: auto;
   }
 
-  .course-selector label {
+  .filter .course-selector .label {
     height: 15px;
+    width: 45px;
     /* UI Properties */
     text-align: left;
     font: normal normal medium 12px/16px Quicksand;
+    font-size: 12px;
     letter-spacing: 0px;
     color: #686868;
     opacity: 1;
@@ -171,7 +186,10 @@ hr {
     width: 571px;
     margin-left: auto;
     margin-right: auto;
-    padding: 24px;
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 6px;
     background: #ffffff 0% 0% no-repeat padding-box;
     border-radius: 2px;
     opacity: 1;
@@ -193,10 +211,22 @@ hr {
 
   .card-1 .content1 {
     margin-left: 16px;
-    width: 260px;
+
+    width: 450px;
   }
 
-  .card-1 .content1 #acceleration,
+  .card-1 .content1 .card-heading {
+    display: flex;
+    justify-content: space-between;
+    /* width: 400px; */
+  }
+
+  .card-1 .content1 .card-heading img {
+    width: 20px;
+    height: 24px;
+  }
+
+  .card-1 .content1 .card-heading #acceleration,
   #displacement,
   #biology,
   #maths {
@@ -219,13 +249,28 @@ hr {
   }
 
   .card-1 .content1 #teacher {
-    width: 375px;
-    border: none;
+    /* width: 375px; */
+
+    display: flex;
+    justify-content: space-between;
     margin-top: 10px;
 
     margin-bottom: 0;
     font-size: 16px;
     color: #222222;
+  }
+
+  .card-1 .content1 #teacher img {
+    width: 15px;
+    height: 24px;
+  }
+
+  .card-1 .content1 #teacher .teacher-name {
+    text-align: left;
+    font: normal normal medium 16px/20px Quicksand;
+    letter-spacing: 0px;
+    color: #222222;
+    opacity: 1;
   }
 
   .card-1 .content1 .date {
@@ -324,20 +369,39 @@ hr {
   }
 
   .nav-bar .icons-container {
+    height: 56px;
     display: flex;
-
-    margin-top: 0;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 8px; */
   }
 
   .nav-bar .icons-container span {
     color: #3fd28b;
     margin-right: 32px;
 
-    height: 18px;
+    /* height: 18px; */
+  }
+
+  .nav-bar .icons-container .dashboard {
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    box-sizing: border-box;
+    border-bottom: 4px solid #ffffff;
   }
 
   .nav-bar .icons-container .alert {
     margin-right: 32px;
+    width: 21px;
+    height: 24px;
+  }
+
+  .nav-bar .icons-container .announcements {
+    width: 20px;
+    height: 20px;
   }
 
   .nav-bar .icons-container .hamburger {
@@ -360,6 +424,12 @@ hr {
 
   .start-box .course-box {
     display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 488px;
+    height: 64px;
+    box-sizing: border-box;
+    border-bottom: 4px solid #222222;
   }
 
   .start-box .course-box .courses {
@@ -386,6 +456,10 @@ hr {
 
   .start-box .classes-box {
     display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 488px;
+    height: 64px;
   }
 
   .start-box .classes-box .classes-img {
@@ -418,59 +492,50 @@ hr {
   }
 
   .filter .course-selector {
-    /* margin-left: 335px; */
-    height: 28px;
-    display: flex;
-    align-items: center;
-  }
-
-  .filter .course-selector label {
-    height: 15px;
-    /* UI Properties */
-    text-align: left;
-    font: normal normal medium 12px/16px Quicksand;
-    letter-spacing: 0px;
-    color: #686868;
-    opacity: 1;
-  }
-
-  .filter #course-name {
     margin-left: 6px;
-    border: none;
-    border-bottom: 1px solid #213e543d;
-    background-color: inherit;
-    width: 202px;
-    height: 20px;
-    /* UI Properties */
-    text-align: left;
-    font: normal normal medium 16px/20px Quicksand;
-    letter-spacing: 0px;
-    color: #333333;
-    opacity: 1;
+    height: 28px;
+    width: 253px;
+    display: flex;
+    justify-content: end;
   }
 
-  .filter #course-name option {
-    width: 102px;
-    height: 20px;
-    /* UI Properties */
-    text-align: left;
-    font: normal normal medium 16px/20px Quicksand;
-    letter-spacing: 0px;
-    color: #333333;
-    opacity: 1;
+  .filter .course-selector #course-name {
+    width: 156px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 6px;
+    font-size: 16px;
+    border-bottom: 1px solid #666666;
+  }
+
+  .filter .course-selector #course-name img {
+    width: 15px;
+    height: 24px;
   }
 
   .filter p {
-    /* width: 132px; */
     height: 15px;
+    width: 132px;
     /* UI Properties */
     text-align: left;
     font: normal normal medium 12px/14px Quicksand;
+    font-size: 12px;
     letter-spacing: 0px;
     color: #686868;
     opacity: 1;
   }
 
+  .filter .course-selector .label {
+    height: 15px;
+    width: 45px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal medium 12px/16px Quicksand;
+    font-size: 12px;
+    letter-spacing: 0px;
+    color: #686868;
+    opacity: 1;
+  }
   .underline {
     width: 976px;
     margin-left: auto;
@@ -517,9 +582,21 @@ hr {
 
   .card-1 .content1 {
     margin-left: 16px;
+    width: 280px;
   }
 
-  .card-1 .content1 #acceleration,
+  .card-1 .content1 .card-heading {
+    display: flex;
+    justify-content: space-between;
+    /* width: 400px; */
+  }
+
+  .card-1 .content1 .card-heading img {
+    width: 20px;
+    height: 24px;
+  }
+
+  .card-1 .content1 .card-heading #acceleration,
   #displacement,
   #biology,
   #maths {
@@ -530,6 +607,10 @@ hr {
   .card-1 .content1 #acceleration {
     width: 94px;
     height: 20px;
+  }
+
+  .card-1 .content1 .card-heading #displacement {
+    width: 250px;
   }
 
   .card-1 .content1 .bio {
@@ -554,13 +635,28 @@ hr {
   }
 
   .card-1 .content1 #teacher {
-    width: 264px;
-    height: 20px;
-    border: none;
+    /* width: 375px; */
+
+    display: flex;
+    justify-content: space-between;
     margin-top: 10px;
+
     margin-bottom: 0;
     font-size: 16px;
     color: #222222;
+  }
+
+  .card-1 .content1 #teacher img {
+    width: 15px;
+    height: 24px;
+  }
+
+  .card-1 .content1 #teacher .teacher-name {
+    text-align: left;
+    font: normal normal medium 16px/20px Quicksand;
+    letter-spacing: 0px;
+    color: #222222;
+    opacity: 1;
   }
 
   .card-1 .content1 .date {
