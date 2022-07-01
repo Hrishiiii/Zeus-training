@@ -234,6 +234,14 @@ hr {
     margin-bottom: 0;
   }
 
+  .card-1 .content1 .bio {
+    overflow: hidden;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    width: 347px;
+    height: 40px;
+  }
+
   .card-1 .content1 .info {
     margin-top: 8px;
     margin-bottom: 0;
@@ -614,7 +622,11 @@ hr {
   }
 
   .card-1 .content1 .bio {
-    /* white-space: nowrap; */
+    overflow: hidden;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    width: 260px;
+height: 43px;
   }
 
   .card-1 .content1 .info {
