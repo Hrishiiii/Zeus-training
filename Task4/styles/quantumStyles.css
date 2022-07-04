@@ -1,0 +1,645 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #eeeeee 0% 0% no-repeat padding-box;
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Quicksand", sans-serif;
+}
+
+@media only screen and (min-width: 1025px) {
+  .nav-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 47px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-left: 29px;
+    padding-top: 15px;
+    background-color: #25313f;
+    top: 0;
+    position: -webkit-sticky;
+    position: sticky;
+  }
+  .nav-bar img {
+    height: 30px;
+    margin-bottom: 0;
+  }
+  #login_form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 32px;
+    padding-right: 32px;
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
+    width: 488px;
+    height: 600px;
+    margin-top: 50px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #ffffff;
+    opacity: 1;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 4px solid #3ac7ec;
+  }
+  .heading {
+    margin-top: 20px;
+    margin-bottom: 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .heading span {
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 77px;
+    width: 236px;
+    height: 30px;
+    /* UI Properties */
+    text-align: center;
+    font: normal normal medium 24px/28px Quicksand;
+    font-size: 24px;
+    letter-spacing: 0px;
+    color: #222222;
+    opacity: 1;
+  }
+  .radio-btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    padding: 0;
+  }
+  .radio-btns .district-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 81px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .radio-btns .school-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 176px;
+    margin-left: 32px;
+  }
+  .radio-btns .district-box .district {
+    width: 53px;
+    height: 20px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal medium 16px/20px Quicksand;
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+  }
+  .label-state {
+    margin-top: 23px;
+    width: 34px;
+    height: 15px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal medium 12px/16px Quicksand;
+    letter-spacing: 0px;
+    color: #666666;
+    opacity: 1;
+  }
+  .states {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 5px;
+  }
+  .states .state {
+    width: 68px;
+    height: 20px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal medium 16px/20px Quicksand;
+    letter-spacing: 0px;
+    color: #222222;
+    opacity: 1;
+  }
+  .label-district {
+    height: 20px;
+    margin-top: 36px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal medium 16px/20px Quicksand;
+    letter-spacing: 0px;
+    color: #666666;
+    opacity: 1;
+    margin-bottom: 0;
+  }
+  .districts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 5px;
+  }
+  .districts .district {
+    width: 181px;
+    height: 20px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal medium 16px/20px Quicksand;
+    letter-spacing: 0px;
+    color: #222222;
+    opacity: 1;
+  }
+  .username {
+    height: 20px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal medium 16px/20px Quicksand;
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #666666;
+    opacity: 1;
+    border: none;
+    border-bottom: 1px solid #eeeeee;
+    margin-top: 56px;
+  }
+  #forgot-username {
+    margin-top: 5px;
+    text-align: end;
+    /* width: 142px; */
+    height: 18px;
+    /* UI Properties */
+    font: normal normal medium 14px/18px Quicksand;
+    letter-spacing: 0px;
+    color: #1f7a54;
+    text-transform: uppercase;
+    opacity: 1;
+    text-decoration: none;
+  }
+  .password {
+    margin-top: 56px;
+    height: 20px;
+    border: none;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 16px;
+  }
+  #forgot-pass {
+    height: 18px;
+    /* UI Properties */
+    text-align: right;
+    font: normal normal medium 14px/18px Quicksand;
+    letter-spacing: 0px;
+    color: #1f7a54;
+    text-transform: uppercase;
+    opacity: 1;
+    margin-top: 5px;
+    text-decoration: none;
+  }
+  .wrapper {
+    margin-top: 26px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .wrapper .remember-me {
+    width: 111px;
+    height: 20px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal medium 16px/20px Quicksand;
+    letter-spacing: 0px;
+    color: #222222;
+    opacity: 1;
+    margin-left: 5px;
+  }
+  .form-btn {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 34px;
+    margin-bottom: 24px;
+    border: none;
+    width: 216px;
+    height: 40px;
+    /* UI Properties */
+    background: #3fd28b 0% 0% no-repeat padding-box;
+    -webkit-box-shadow: 0px 3px 5px #0000003d;
+            box-shadow: 0px 3px 5px #0000003d;
+    opacity: 1;
+  }
+  .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 32px;
+  }
+  .info .about {
+    margin-right: 5px;
+    height: 18px;
+    /* UI Properties */
+    text-align: center;
+    font: normal normal medium 14px/18px Quicksand;
+    letter-spacing: 0px;
+    color: #1f7a54;
+    opacity: 1;
+  }
+  .info .dash {
+    color: #213e543d;
+  }
+  .info .contact {
+    height: 18px;
+    /* UI Properties */
+    text-align: center;
+    font: normal normal medium 14px/18px Quicksand;
+    letter-spacing: 0px;
+    color: #1f7a54;
+    opacity: 1;
+    margin-left: 5px;
+  }
+  footer {
+    padding-top: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 40px;
+    /* UI Properties */
+    background: #e0e1e1 0% 0% no-repeat padding-box;
+    opacity: 1;
+  }
+  footer img {
+    width: 90px;
+    height: 24px;
+    /* UI Properties */
+    opacity: 1;
+  }
+  footer .dash {
+    margin-bottom: 0;
+    margin-right: 12px;
+    margin-left: 12px;
+    color: #213e543d;
+  }
+  footer .copyright {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 11px;
+    color: #666666;
+  }
+  footer .rights {
+    margin-top: 0;
+    color: #666666;
+  }
+  footer span {
+    font-weight: bold;
+  }
+}
+
+/* Screen sizes from 768 to 1024 px */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .nav-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 47px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-left: 29px;
+    padding-top: 15px;
+    background-color: #25313f;
+    top: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    margin-bottom: 0;
+  }
+  .nav-bar {
+    /* width: 129px; */
+  }
+  .nav-bar img {
+    height: 30px;
+    margin-bottom: 0;
+  }
+  #login_form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 32px;
+    padding-right: 32px;
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
+    width: 488px;
+    height: 600px;
+    margin-top: 50px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #ffffff;
+    opacity: 1;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 4px solid #3ac7ec;
+  }
+  .heading {
+    margin-top: 20px;
+    margin-bottom: 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .heading span {
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 77px;
+    width: 236px;
+    height: 30px;
+    /* UI Properties */
+    text-align: center;
+    font: normal normal medium 24px/28px Quicksand;
+    font-size: 24px;
+    letter-spacing: 0px;
+    color: #222222;
+    opacity: 1;
+  }
+  .radio-btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    padding: 0;
+  }
+  .radio-btns .district-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 81px;
+    height: 24px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .radio-btns .district-box .district {
+    width: 53px;
+    height: 20px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal medium 16px/20px Quicksand;
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #333333;
+    opacity: 1;
+  }
+  .radio-btns .school-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 176px;
+    margin-left: 32px;
+  }
+  .label-state {
+    margin-top: 25px;
+    width: 34px;
+    height: 15px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal medium 12px/16px Quicksand;
+    letter-spacing: 0px;
+    color: #666666;
+    opacity: 1;
+  }
+  .states {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 5px;
+  }
+  .states .state {
+    width: 68px;
+    height: 20px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal medium 16px/20px Quicksand;
+    letter-spacing: 0px;
+    color: #222222;
+    opacity: 1;
+  }
+  .label-district {
+    height: 20px;
+    margin-top: 36px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal medium 16px/20px Quicksand;
+    letter-spacing: 0px;
+    color: #666666;
+    opacity: 1;
+    margin-bottom: 0;
+  }
+  .districts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 5px;
+  }
+  .districts .district {
+    width: 181px;
+    height: 20px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal medium 16px/20px Quicksand;
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #222222;
+    opacity: 1;
+  }
+  .username {
+    height: 20px;
+    /* UI Properties */
+    width: 153px;
+    text-align: left;
+    font: normal normal medium 16px/20px Quicksand;
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #666666;
+    opacity: 1;
+    border: none;
+    border-bottom: 1px solid #eeeeee;
+    margin-top: 56px;
+  }
+  #forgot-username {
+    margin-top: 5px;
+    text-align: end;
+    /* width: 142px; */
+    height: 18px;
+    /* UI Properties */
+    font: normal normal medium 14px/18px Quicksand;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #1f7a54;
+    text-transform: uppercase;
+    opacity: 1;
+    text-decoration: none;
+  }
+  .password {
+    margin-top: 56px;
+    height: 20px;
+    border: none;
+    border-bottom: 1px solid #eeeeee;
+    font-size: 16px;
+  }
+  #forgot-pass {
+    height: 18px;
+    /* UI Properties */
+    text-align: right;
+    font: normal normal medium 14px/18px Quicksand;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #1f7a54;
+    text-transform: uppercase;
+    opacity: 1;
+    margin-top: 5px;
+    text-decoration: none;
+  }
+  .wrapper {
+    margin-top: 26px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .wrapper .remember-me {
+    width: 111px;
+    height: 20px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal medium 16px/20px Quicksand;
+    letter-spacing: 0px;
+    color: #222222;
+    opacity: 1;
+    margin-left: 5px;
+  }
+  .form-btn {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 34px;
+    margin-bottom: 24px;
+    border: none;
+    width: 216px;
+    height: 40px;
+    /* UI Properties */
+    background: #3fd28b 0% 0% no-repeat padding-box;
+    -webkit-box-shadow: 0px 3px 5px #0000003d;
+            box-shadow: 0px 3px 5px #0000003d;
+    opacity: 1;
+  }
+  .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 258px;
+    font-size: 14px;
+  }
+  .info .about {
+    margin-right: 5px;
+    height: 18px;
+    /* UI Properties */
+    text-align: center;
+    font: normal normal medium 14px/18px Quicksand;
+    font-size: 14px;
+    letter-spacing: 0px;
+    color: #1f7a54;
+    opacity: 1;
+  }
+  .info .dash {
+    color: #213e543d;
+    height: 18px;
+    font-size: 14px;
+  }
+  .info .contact {
+    height: 18px;
+    /* UI Properties */
+    text-align: center;
+    font: normal normal medium 14px/18px Quicksand;
+    letter-spacing: 0px;
+    color: #1f7a54;
+    opacity: 1;
+    margin-left: 5px;
+    font-size: 14px;
+  }
+  footer {
+    padding-top: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 40px;
+    /* UI Properties */
+    background: #e0e1e1 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin-top: 10px;
+  }
+  footer img {
+    width: 90px;
+    height: 24px;
+    /* UI Properties */
+    opacity: 1;
+  }
+  footer .dash {
+    margin-bottom: 0;
+    margin-right: 12px;
+    margin-left: 12px;
+    color: #213e543d;
+  }
+  footer .copyright {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 11px;
+    color: #666666;
+  }
+  footer .rights {
+    margin-top: 0;
+    color: #666666;
+  }
+  footer span {
+    font-weight: bold;
+  }
+}
+/*# sourceMappingURL=quantumStyles.css.map */
