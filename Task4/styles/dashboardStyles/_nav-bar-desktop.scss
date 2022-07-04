@@ -1,0 +1,55 @@
+.nav-bar {
+    /* width: 768px; */
+    display: $flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    background-color: #25313f;
+    padding-left: 25px;
+    padding-top: 11px;
+    padding-right: 25px;
+
+    .logo {
+      width: 129px;
+      height: 23px;
+    }
+
+    .icons-container {
+      height: 56px;
+      display: $flex;
+      justify-content: center;
+      align-items: center;
+      
+      span {
+        color: #3fd28b;
+        margin-right: 32px;
+    
+        /* height: 18px; */
+      }
+
+      .dashboard {
+        height: 56px;
+        display: $flex;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        box-sizing: border-box;
+        border-bottom: 4px solid #ffffff;
+      }
+
+      .alert {
+        margin-right: 32px;
+        width: 21px;
+        height: 24px;
+      }
+
+      .announcements {
+        width: 20px;
+        height: 20px;
+      }
+
+      .hamburger {
+        display: none;
+      }
+    }
+  }

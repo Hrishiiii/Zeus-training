@@ -1,0 +1,27 @@
+.nav-bar {
+    /* width: 768px; */
+    display: $flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    background-color: #25313f;
+    padding-left: 25px;
+    padding-top: 11px;
+    padding-right: 25px;
+
+    .icons-container {
+      display: $flex;
+  
+      margin-top: 0;
+
+      span {
+          display: none;
+        }
+
+        .announcements {
+          margin-left: 20px;
+          margin-right: 20px;
+        }
+    }
+
+  }
