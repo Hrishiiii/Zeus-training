@@ -1,7 +1,7 @@
 .nav-bar {
     /* width: 768px; */
     display: $flex;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
     height: 56px;
     background-color: #25313f;
@@ -11,20 +11,23 @@
 
     .logo {
       width: 129px;
-      height: 23px;
+      height: 33px;
     }
 
-    .icons-container {
-      height: 56px;
+
+    .menu
+    {
       display: $flex;
-      justify-content: center;
-      align-items: center;
+      margin-left: auto;
+      height: 56px;
       
-      span {
+
+      li{
         color: #3fd28b;
         margin-right: 32px;
-    
-        /* height: 18px; */
+        display: $flex;
+        justify-content: center;
+        align-items: center;
       }
 
       .dashboard {
@@ -36,16 +39,28 @@
         box-sizing: border-box;
         border-bottom: 4px solid #ffffff;
       }
+    }
+
+
+    .icons-container {
+      max-height: 56px;
+      display: $flex;
+      justify-content: center;
+      align-items: center;
 
       .alert {
         margin-right: 32px;
         width: 21px;
-        height: 24px;
+        max-height: 24px;
+        position: relative;
+
+       
       }
 
       .announcements {
         width: 20px;
-        height: 20px;
+        max-height: 20px;
+        position: relative;
       }
 
       .hamburger {
