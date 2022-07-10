@@ -1,0 +1,74 @@
+
+.announce-items {
+  display: none;
+  position: absolute;
+  width: 315px;
+  height: 582px;
+  box-shadow: 0px 3px 6px #00000029;
+  opacity: 1;
+  margin-top: 16px;
+  background: #FFFFEE 0% 0% no-repeat padding-box;
+  overflow-y: scroll;
+ 
+}
+
+.announce-items .list{
+  
+height: 114px;
+padding: 16px;
+border-bottom: 1px solid #2222221F;
+}
+
+.announce-items .list .items{
+  width: 253px;
+height: 36px;
+text-align: left;
+font-size: 14px;
+font-weight: bold;
+letter-spacing: 0px;
+color: #222222;
+opacity: 1;
+}
+
+.announce-items .list .course{
+  width: 138px;
+height: 15px;
+/* UI Properties */
+text-align: left;
+font-size: 12px;
+letter-spacing: 0px;
+color: #6E6E6E;
+opacity: 1;
+margin-top: 8px;
+}
+
+.announce-items .list .details{
+  display:flex;
+  justify-content: space-between;
+}
+
+.announce-items .list .details .details-content{
+  height: 15px;
+
+text-align: right;
+font-size: 12px;
+letter-spacing: 0px;
+color: #6E6E6E;
+opacity: 1;
+}
+
+.announce-items .list .teacherInfo .name{
+  width: 99px;
+font-size: 15px;
+}
+
+
+.announcements:hover .announce-items {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  position: absolute;
+  right: 0;
+ 
+}
