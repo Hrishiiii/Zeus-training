@@ -14,9 +14,13 @@
       src="https://kit.fontawesome.com/21a5cfe304.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="styles/dashboardStyles/quantumDashboard.css" />
 
-    <title>Document</title>
+    <link rel="stylesheet" href="alertItems.css">
+    <link rel="stylesheet" href="announceItems.css">
+    <link rel="stylesheet" href="styles/dashboardStyles/quantumDashboard.css" />
+    
+
+    <title>Quantum Dashboard</title>
   </head>
   <body>
     <!-- Navigation bar -->
@@ -28,18 +32,34 @@
         tabindex="0"
       />
 
+      <div class="menu">
+        <li class="dashboard" tabindex="0">DASHBOARD</li>
+        <li class="content" tabindex="0">CONTENT</li>
+        <li class="users" tabindex="0">USERS</li>
+        <li class="reports" tabindex="0">REPORTS</li>
+        <li class="admin" tabindex="0">ADMIN</li>
+      </div>
+
       <span class="icons-container" >
-        <span class="dashboard" tabindex="0">DASHBOARD</span>
-        <span class="content" tabindex="0">CONTENT</span>
-        <span class="users" tabindex="0">USERS</span>
-        <span class="reports" tabindex="0">REPORTS</span>
-        <span class="admin" tabindex="0">ADMIN</span>
-        <img src="icons/alerts.svg" alt="alert-icon" class="alert" />
-        <img
+
+        <div class="alert">
+          <img src="icons/alerts.svg" alt="alert-icon"  />
+          <div class="alert-items">
+            
+          </div>
+          
+        </div>
+        
+
+        <div class="announcements">
+          <img
           src="icons/announcements.svg"
           alt="announcements-icon"
-          class="announcements"
-        />
+          
+          />
+          <div class="announce-items"></div>
+        </div>
+        
         <img src="icons/hamburger-menu.svg" alt="menu" class="hamburger" />
       </span>
     </nav>
@@ -270,5 +290,9 @@
         All rights reserved.
       </p>
     </footer>
+
+    <script src="quantumDashboard.js"></script>
+    <script src="announcementItems.js"></script>
+    <script src="alertItems.js"></script>
   </body>
 </html>
