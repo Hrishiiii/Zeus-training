@@ -19,24 +19,38 @@
       display: $flex;
       height:56px;
       margin-top: 0;
+      justify-content: space-between;
       align-items: center;
 
     
         .announcements {
+          display: $flex;
+          align-items: center;
           margin-left: 20px;
           margin-right: 20px;
           width: 20px;
-          max-height: 20px;
+          height: 56px;
           position: relative;
+
+          img{
+            width: 20px;
+            max-height: 20px;
+          }
 
         }
 
         .alert{
+
+          display: $flex;
+          align-items: center;
           width: 21px;
-          max-height: 24px;
+          height: 56px;
           position: relative;
 
-          
+          img{
+            width: 21px;
+            max-height: 24px;
+          }
 
         }
 

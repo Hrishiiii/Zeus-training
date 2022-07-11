@@ -43,24 +43,36 @@
 
 
     .icons-container {
-      max-height: 56px;
+      height: 56px;
       display: $flex;
       justify-content: center;
       align-items: center;
 
       .alert {
+        display: $flex;
+        align-items: center;
         margin-right: 32px;
         width: 21px;
-        max-height: 24px;
+        height: 56px;
         position: relative;
 
-       
+       img{
+        width: 21px;
+        max-height: 24px;
+       }
       }
 
       .announcements {
         width: 20px;
-        max-height: 20px;
+        height: 56px;
         position: relative;
+        display: $flex;
+        align-items: center;
+
+        img{
+          width: 20px;
+          max-height: 20px;
+        }
       }
 
       .hamburger {
