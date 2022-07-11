@@ -1,12 +1,11 @@
 .alert-items{
     display: none;
-    position: absolute;
     width: 315px;
     height: 579px;
     background: #FFFFEE 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
     opacity: 1;
-    margin-top: 12px;
+    top: 56px;
     overflow-y: scroll;
 
 }
@@ -57,6 +56,11 @@ letter-spacing: 0px;
 color: #6E6E6E;
 opacity: 1;
 margin-top: 8px;
+}
+
+.alert:hover img{
+
+    filter: brightness(0) invert(1);
 }
 
 .alert:hover .alert-items{

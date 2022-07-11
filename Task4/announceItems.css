@@ -1,12 +1,12 @@
 
 .announce-items {
   display: none;
-  position: absolute;
+  /* position: absolute; */
   width: 315px;
   height: 582px;
   box-shadow: 0px 3px 6px #00000029;
   opacity: 1;
-  margin-top: 16px;
+  top: 56px;
   background: #FFFFEE 0% 0% no-repeat padding-box;
   overflow-y: scroll;
  
@@ -62,12 +62,14 @@ opacity: 1;
 font-size: 15px;
 }
 
+.announcements:hover img{
+  filter: brightness(0) invert(1); 
+  /* brightness:(0) makes the entire image black and then invert(1) inverts the black color to white */
+}
 
 .announcements:hover .announce-items {
   display: flex;
   flex-direction: column;
-  /* justify-content: center;
-  align-items: center; */
   position: absolute;
   right: 0;
  
