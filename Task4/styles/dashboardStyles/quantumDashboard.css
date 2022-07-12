@@ -246,29 +246,6 @@ hr {
     opacity: 1;
     margin-top: 24px;
   }
-  .main-card .card-icons {
-    border-top: 1px solid #333333;
-    margin-top: 16px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    padding-top: 18px;
-  }
-  .main-card .card-icons .icon-1 {
-    width: 22px;
-    height: 24px;
-  }
-  .main-card .card-icons .icon-2,
-  .main-card .card-icons .icon-3 {
-    width: 18px;
-    height: 20px;
-  }
-  .main-card .card-icons .icon-4 {
-    width: 18px;
-    height: 24px;
-  }
   .main-card .card-1 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -299,19 +276,13 @@ hr {
     width: 20px;
     height: 24px;
   }
-  .main-card .card-1 .content1 .card-heading #acceleration,
-  .main-card .card-1 .content1 .card-heading #displacement,
-  .main-card .card-1 .content1 .card-heading #biology,
-  .main-card .card-1 .content1 .card-heading #maths {
+  .main-card .card-1 .content1 .card-heading .chapters {
     margin-top: 0;
     margin-bottom: 0;
-  }
-  .main-card .card-1 .content1 .bio {
     overflow: hidden;
     font-weight: bold;
     text-overflow: ellipsis;
     width: 347px;
-    height: 40px;
   }
   .main-card .card-1 .content1 .info {
     margin-top: 8px;
@@ -323,6 +294,7 @@ hr {
   .main-card .card-1 .content1 .units {
     margin-top: 5px;
     margin-bottom: 0;
+    height: 18px;
   }
   .main-card .card-1 .content1 #teacher {
     /* width: 375px; */
@@ -357,6 +329,29 @@ hr {
     letter-spacing: 0px;
     color: #666666;
     opacity: 1;
+  }
+  .main-card .card-icon {
+    border-top: 1px solid #333333;
+    margin-top: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-top: 18px;
+  }
+  .main-card .card-icon .icon-1 {
+    width: 22px;
+    height: 24px;
+  }
+  .main-card .card-icon .icon-2,
+  .main-card .card-icon .icon-3 {
+    width: 18px;
+    height: 20px;
+  }
+  .main-card .card-icon .icon-4 {
+    width: 18px;
+    height: 24px;
   }
   .reach {
     color: #1f7a54;
@@ -661,7 +656,7 @@ hr {
     row-gap: 24px;
     margin-top: 16px;
   }
-  .main-card {
+  .main-container .main-card {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -674,7 +669,7 @@ hr {
     border-radius: 2px;
     opacity: 1;
   }
-  .main-card .card-icons {
+  .main-container .main-card .card-icon {
     border-top: 1px solid #333333;
     margin-top: 16px;
     display: -webkit-box;
@@ -684,26 +679,29 @@ hr {
         justify-content: space-around;
     padding-top: 18px;
   }
-  .main-card .card-icons .icon-1 {
+  .main-container .main-card .card-icon .icon-1 {
     width: 22px;
     height: 24px;
   }
-  .main-card .card-icons .icon-2,
-  .main-card .card-icons .icon-3 {
+  .main-container .main-card .card-icon .icon-2,
+  .main-container .main-card .card-icon .icon-3 {
     width: 18px;
     height: 20px;
   }
-  .main-card .card-icons .icon-4 {
+  .main-container .main-card .card-icon .icon-4 {
     width: 18px;
     height: 24px;
   }
-  .main-card .card-1 {
+  .main-container .main-card .card-icon .blurry {
+    opacity: 0.4;
+  }
+  .main-container .main-card .card-1 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     height: 157px;
   }
-  .main-card .card-1 img {
+  .main-container .main-card .card-1 img {
     width: 132px;
     height: 157px;
     /* UI Properties */
@@ -711,11 +709,11 @@ hr {
     border-radius: 2px;
     opacity: 1;
   }
-  .main-card .card-1 .content1 {
+  .main-container .main-card .card-1 .content1 {
     margin-left: 16px;
     width: 280px;
   }
-  .main-card .card-1 .content1 .card-heading {
+  .main-container .main-card .card-1 .content1 .card-heading {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -724,45 +722,32 @@ hr {
             justify-content: space-between;
     /* width: 400px; */
   }
-  .main-card .card-1 .content1 .card-heading img {
+  .main-container .main-card .card-1 .content1 .card-heading img {
     width: 20px;
     height: 24px;
   }
-  .main-card .card-1 .content1 .card-heading #acceleration,
-  .main-card .card-1 .content1 .card-heading #displacement,
-  .main-card .card-1 .content1 .card-heading #biology,
-  .main-card .card-1 .content1 .card-heading #maths {
+  .main-container .main-card .card-1 .content1 .card-heading .chapters {
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
     margin-top: 0;
     margin-bottom: 0;
-  }
-  .main-card .card-1 .content1 .card-heading #acceleration {
-    width: 94px;
-    height: 20px;
-  }
-  .main-card .card-1 .content1 .card-heading #displacement {
-    width: 250px;
-  }
-  .main-card .card-1 .content1 .card-heading .bio {
-    overflow: hidden;
-    font-weight: bold;
-    text-overflow: ellipsis;
     width: 260px;
     height: 43px;
   }
-  .main-card .card-1 .content1 .info {
+  .main-container .main-card .card-1 .content1 .info {
     margin-top: 7px;
     margin-bottom: 0;
     height: 15px;
   }
-  .main-card .card-1 .content1 .info .num {
+  .main-container .main-card .card-1 .content1 .info .num {
     color: #1f7a54;
   }
-  .main-card .card-1 .content1 .units {
+  .main-container .main-card .card-1 .content1 .units {
     margin-top: 8px;
     margin-bottom: 0;
-    height: 15px;
   }
-  .main-card .card-1 .content1 #teacher {
+  .main-container .main-card .card-1 .content1 #teacher {
     /* width: 375px; */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -775,18 +760,18 @@ hr {
     font-size: 16px;
     color: #222222;
   }
-  .main-card .card-1 .content1 #teacher img {
+  .main-container .main-card .card-1 .content1 #teacher img {
     width: 15px;
     height: 24px;
   }
-  .main-card .card-1 .content1 #teacher .teacher-name {
+  .main-container .main-card .card-1 .content1 #teacher .teacher-name {
     text-align: left;
-    font: normal normal medium 16px/20px Quicksand;
+    font-size: 16px;
     letter-spacing: 0px;
     color: #222222;
     opacity: 1;
   }
-  .main-card .card-1 .content1 .date {
+  .main-container .main-card .card-1 .content1 .date {
     margin-top: 0;
     font-size: 12px;
     font: normal normal medium 12px/16px Quicksand;
