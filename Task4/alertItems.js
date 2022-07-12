@@ -42,8 +42,8 @@ function alertTemplate(data){
         `
         <div class="main-box">
             <div class="heading">
-                <span class="alert-topic">${data.topic}</span>
-                <img src="${data.img ? "icons/checkbox-checked.svg":""}" />
+                <span class="alert-topic">${data.topic}</span> 
+                <img src="${data.img ? "icons/checkbox-checked.svg": "icons/minus.png"}" />
             </div>
             <span class="courses">${data.course}</span>
             <p class="time">${data.time}</p>

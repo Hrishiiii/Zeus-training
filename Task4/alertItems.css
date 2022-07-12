@@ -58,7 +58,7 @@ opacity: 1;
 margin-top: 8px;
 }
 
-.alert:hover img{
+.alert:hover .alert-img{
 
     filter: brightness(0) invert(1);
 }
@@ -66,7 +66,7 @@ margin-top: 8px;
 .alert:hover .alert-items{
     display: flex;
     flex-direction: column;
-    
+    z-index: 1;
     position: absolute;
     right: 0;
 }

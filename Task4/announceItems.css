@@ -62,7 +62,7 @@ opacity: 1;
 font-size: 15px;
 }
 
-.announcements:hover img{
+.announcements:hover .announce-img{
   filter: brightness(0) invert(1); 
   /* brightness:(0) makes the entire image black and then invert(1) inverts the black color to white */
 }
@@ -72,5 +72,6 @@ font-size: 15px;
   flex-direction: column;
   position: absolute;
   right: 0;
+  z-index: 1;
  
 }
