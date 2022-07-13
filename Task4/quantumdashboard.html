@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google fonts link -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,12 +18,12 @@
       src="https://kit.fontawesome.com/21a5cfe304.js"
       crossorigin="anonymous"
     ></script>
-    
-    <link rel="stylesheet" href="alertItems.css">
-    <link rel="stylesheet" href="announceItems.css">
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="alertDropdown/alertItems.css">
+    <link rel="stylesheet" href="announceDropdown/announceItems.css">
     <link rel="stylesheet" href="styles/dashboardStyles/quantumDashboard.css" />
     
-
     <title>Quantum Dashboard</title>
   </head>
   <body>
@@ -46,13 +48,9 @@
 
         <div class="alert">
           <img src="icons/alerts.svg" alt="alert-icon" class="alert-img" />
-          <div class="alert-items">
-            
-          </div>
-          
+          <div class="alert-items"></div>
         </div>
         
-
         <div class="announcements">
           <img
           src="icons/announcements.svg"
@@ -60,13 +58,14 @@
           class= "announce-img"
           />
           <div class="announce-items"></div>
+
         </div>
         
         <img src="icons/hamburger-menu.svg" alt="menu" class="hamburger" />
       </span>
     </nav>
 
-
+    <!--Start box which consists of courses and classes  -->
     <div class="start-box" >
       <div class="course-box">
         <img src="icons/courses.svg" alt="courses-image" class="courses-img" />
@@ -79,6 +78,7 @@
       </div>
     </div>
 
+    <!-- Filter section -->
     <div class="filter">
       <p>Showing 4 of 4 courses</p>
 
@@ -92,6 +92,7 @@
     </div>
     <hr class="underline" />
 
+    <!-- The main body of the webpage -->
     <div class="main-container">
       
     </div>
@@ -111,9 +112,13 @@
       </p>
     </footer>
 
-    <script src="quantumDashboard.js"></script>
-    <script src="announcementItems.js"></script>
-    <script src="alertItems.js"></script>
-    <script src="dashboardCard.js"></script>
+    <!-- Scripts -->
+    <script src="hamburgerDropdown/quantumDashboard.js"></script>
+    <script src="announceDropdown/announcementItems.js"></script>
+    <script src="alertDropdown/alertItems.js"></script>
+    <script src="dashboardCard/dashboardCard.js"></script>
+    <script src="alertDropdown/alertHover.js"></script>
+    <script src="announceDropdown/announceHover.js"></script>
+    
   </body>
 </html>

@@ -58,7 +58,7 @@ hr {
     height: 56px;
     position: relative;
   }
-  .nav-bar .icons-container .announcements img {
+  .nav-bar .icons-container .announcements .announce-img {
     width: 20px;
     max-height: 20px;
   }
@@ -73,7 +73,7 @@ hr {
     height: 56px;
     position: relative;
   }
-  .nav-bar .icons-container .alert img {
+  .nav-bar .icons-container .alert .alert-img {
     width: 21px;
     max-height: 24px;
   }
@@ -477,7 +477,7 @@ hr {
     height: 56px;
     position: relative;
   }
-  .nav-bar .icons-container .alert img {
+  .nav-bar .icons-container .alert .alert-img {
     width: 21px;
     max-height: 24px;
   }
@@ -492,7 +492,7 @@ hr {
         -ms-flex-align: center;
             align-items: center;
   }
-  .nav-bar .icons-container .announcements img {
+  .nav-bar .icons-container .announcements .announce-img {
     width: 20px;
     max-height: 20px;
   }
