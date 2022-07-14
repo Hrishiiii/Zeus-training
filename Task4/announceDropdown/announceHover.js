@@ -10,7 +10,6 @@ announceFooter.innerHTML = `
 announceMenu.appendChild(announceFooter);
 
 
-
 // mouseover event listener.
 announceImg.addEventListener("mouseover",() => {
     displayAll();

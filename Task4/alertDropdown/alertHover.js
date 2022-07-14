@@ -23,6 +23,7 @@ const display = () =>{
     
     alertMenu.style.display = "block";
 
+
 }
 
 //This function takes everything back to normal.
