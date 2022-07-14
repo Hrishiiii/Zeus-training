@@ -1,14 +1,10 @@
-
-    const toggle = document.querySelector(".hamburger");
+//Selecting the hamburger class and the menuItems that we want to display.
+    const toggle = document.querySelector(".burger");
     const menuItems = document.querySelector(".menu");
-    const li = document.querySelectorAll("li");
-    const dashboard = document.querySelector(".dashboard");
-    const admin = document.querySelector(".admin");
-    const content = document.querySelector(".content");
-    const users = document.querySelector(".users");
-    const reports = document.querySelector(".reports");
+    const li = document.querySelector("li");
 
-    
+   
+//mouseover and mouseout eventlisteners which will help us display the menu items.
     toggle.addEventListener("mouseover",() => {
 
         hover();
@@ -17,80 +13,72 @@
     toggle.addEventListener("mouseout",() => {
 
         normal();
+        window.addEventListener('resize', normal); //On mouseout calling this function so that we resize the
+                                                    //window as per requirement.
     });
     
     
-
+//The hover function 
     const hover = () => {
     
         //items that get displayed when we hover over the hamburger icon.
-        menuItems.style = `
-            display: flex;
-            flex-direction: column;
-            
-            position: absolute;
-            margin-top: 350px;
-            width: 280px;
-            height: 288px;
-            right:16px;
-            list-style: none;
-            background: #FFFFFF;
-            box-shadow: 0px 13px 20px #0000003D;
-            border-radius: 2px;
-            opacity: 1;
-            padding-top: 15px;
-            padding-left: 16px;
-        `;
-
-        li.style =`
+        menuItems.style.display = "block";
         
-       
-        text-align: left;
-        letter-spacing: 0px;
-        text-transform: uppercase;
-        opacity: 1;
-        `
 
-        dashboard.style = `
-            height: 48px;
-            color: #1F7A54;
-        `;
-
-        admin.style = `
-            height: 48px;
-            color: #1F7A54;
-        `;
-
-        content.style = `
-            height: 48px;
-            color: #1F7A54;
-        `;
-
-        users.style = `
-            height: 48px;
-            color: #1F7A54;
-        `;
-
-        reports.style = `
-            height: 48px;
-            color: #1F7A54;
-        `;
-        
     };
-        
+    
+//The function to bring everything back to normal after we move out of the div that was used for hovering.
     const normal = () => {
 
-    
-
-            menuItems.style = `
+        //Basically adding media queries to javascript here.
+        if (window.innerWidth < 1025) {
+            menuItems.style = `display:none;`
+       
+          }   
+        else{
+            menuItems.style = `      
             display: $flex;
             margin-left: auto;
+            height: 56px;
             `;
-        
-        
+        }
     };
     
+
+    //Functions for making each item display properly when hovering over and out.
+    menuItems.addEventListener("mouseover",()=>{
+        menuItems.style.display = "block";
+    });
    
+    menuItems.addEventListener("mouseout",()=>{
+        menuItems.style =  
+        `
+        display:none;
+        `
+
+    });
+
+
+
+    const content = document.querySelector(".content");
+
+    //Function to display additional element when clicked on the div with content class.
+    content.addEventListener("click",()=>{
+        
+        content.classList.toggle("color-change");
+        const drop = document.querySelector(".dropdown");
+        drop.classList.add("color-change");
+        drop.classList.toggle("visible");
+        // dropdown.classList.toggle("dropdown");
+        
+    })
+    
     
 
+
+
+    
+       
+    
+  
 
